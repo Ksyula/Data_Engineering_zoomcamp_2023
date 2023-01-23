@@ -54,7 +54,7 @@ Tip: started and finished on 2019-01-15.
 Remember that `lpep_pickup_datetime` and `lpep_dropoff_datetime` columns are in the format timestamp (date and hour+min+sec) and not in date.
 
 - 20689
-- 20530
+- **20530**
 - 17630
 - 21090
 
@@ -65,7 +65,7 @@ Use the pick up time for your calculations.
 
 - 2019-01-18
 - 2019-01-28
-- 2019-01-15
+- **2019-01-15**
 - 2019-01-10
 
 ## Question 5. The number of passengers
@@ -74,7 +74,7 @@ In 2019-01-01 how many trips had 2 and 3 passengers?
  
 - 2: 1282 ; 3: 266
 - 2: 1532 ; 3: 126
-- 2: 1282 ; 3: 254
+- **2: 1282 ; 3: 254**
 - 2: 1282 ; 3: 274
 
 
@@ -88,17 +88,4 @@ Note: it's not a typo, it's `tip` , not `trip`
 - Central Park
 - Jamaica
 - South Ozone Park
-- Long Island City/Queens Plaza
-
-
-## Submitting the solutions
-
-* Form for submitting: TBA
-* You can submit your homework multiple times. In this case, only the last submission will be used. 
-
-Deadline: 26 January (Thursday), 22:00 CET
-
-
-## Solution
-
-We will publish the solution here
+- **Long Island City/Queens Plaza**

@@ -6,6 +6,7 @@ __pycache__/
 # C extensions
 *.so
 
+
 # Distribution / packaging
 .Python
 build/
@@ -127,3 +128,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+*.csv
+*.csv.gz
+
+*/ny_taxi_postgres_data
