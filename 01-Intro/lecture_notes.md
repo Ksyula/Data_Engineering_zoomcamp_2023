@@ -73,7 +73,7 @@ dpage/pgadmin4
 
 http://localhost:8080/browser/
 
-# Lesson 4
+# Lesson 4 - pack ingest script to docker
 
 jupyter nbconvert --to=script upload-data.ipynb
 
@@ -99,7 +99,7 @@ docker run -it \
   taxi_ingest:v001 \
     --user=root \
     --password=root \
-    --host=pg-database \
+    --host=pgdatabase \
     --port=5432 \
     --db=ny_taxi \
     --table_name=green_taxi_data \
@@ -107,3 +107,9 @@ docker run -it \
 
 python -m http.server
 ifconfig
+docker network ls
+
+# Lecture 5 - docker compose
+
+docker-compose up -d
+docker-compose down

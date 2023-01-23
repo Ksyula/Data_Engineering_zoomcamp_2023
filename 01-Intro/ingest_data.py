@@ -19,7 +19,10 @@ def main(params):
     engine = create_engine(f'postgresql://{user}:{password}@{host}:{port}/{db}') 
 
     print(f'Download the data from URL...')
-    df_iter = pd.read_csv(url, compression = "gzip", iterator = True, chunksize = 100000)
+    df_iter = pd.read_csv(url, 
+                        compression = "gzip", 
+                        iterator = True, 
+                        chunksize = 100000)
 
     df = next(df_iter)
 
