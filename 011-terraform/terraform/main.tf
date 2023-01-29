@@ -1,22 +1,22 @@
-terraform {
-  required_version = ">= 1.0"
-  backend "local" {}  # Can change from "local" to "gcs" (for google) or "s3" (for aws), if you would like to preserve your tf-state online
-  required_providers {
+terraform {                   # configure basic Terraform settings to provision your infrastructure
+  required_version = ">= 1.0" # minimum Terraform version to apply to your configuration
+  backend "local" {}          # Can change from "local" to "gcs" (for google) or "s3" (for aws), if you would like to preserve your tf-state online
+  required_providers {        # specifies the providers required by the current module
     google = {
       source  = "hashicorp/google"
     }
   }
 }
 
-provider "google" {
-  project = var.project
+provider "google" {           # adds a set of resource types and/or data sources that Terraform can manage
+  project = var.project       # The Terraform Registry is the main directory of publicly available providers from most major infrastructure platforms.
   region = var.region
   // credentials = file(var.credentials)  # Use this if you do not want to set env-var GOOGLE_APPLICATION_CREDENTIALS
 }
 
 # Data Lake Bucket
 # Ref: https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/storage_bucket
-resource "google_storage_bucket" "data-lake-bucket" {
+resource "google_storage_bucket" "data-lake-bucket" {        # blocks to define components of your infrastructure
   name          = "${local.data_lake_bucket}_${var.project}" # Concatenating DL bucket & Project name for unique naming
   location      = var.region
 
