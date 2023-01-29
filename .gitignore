@@ -133,3 +133,4 @@ dmypy.json
 *.csv.gz
 
 */ny_taxi_postgres_data
+**/.terraform
