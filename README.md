@@ -1,6 +1,6 @@
 # Data Engineering zoomcamp 2023
 
-<img src="pic.jpg" alt="Data Engineering Zoomcamp" width="200"/>
+<img src="pic.jpg" alt="Data Engineering Zoomcamp" width="250"/>
 
 # Main Technologies
 
@@ -18,13 +18,13 @@
 # Progress:
 | Id | Module Session                                | Progress | Deadline    |
 |----|-----------------------------------------------|----------|--------------|
-|01  | Introduction & Prerequisites    | ✅     | 23/01/2023   |
-|02  | Workflow Orchestration          | ⌛     | 30/01/2023   |
-|03  | Data Warehouse                  | ⌛     | 06/02/2023   |
-|04  | Analytics engineering           | ⌛     | 13/02/2023   |
-|05  | Batch processing                | ⌛     | 20/02/2023   |
-|06  | Streaming                       | ⌛     | 27/01/2023   |
-|07  | Project                         | ⌛     | 06/01/2023   |
+|01  | Introduction & Prerequisites    | ✅     | 26/01/2023   |
+|02  | Workflow Orchestration          | ⌛     | 06/02/2023   |
+|03  | Data Warehouse                  | ⌛     | 13/02/2023   |
+|04  | Analytics Engineering           | ⌛     | 20/02/2023   |
+|05  | Batch processing                | ⌛     | 27/02/2023   |
+|06  | Streaming                       | ⌛     | 06/03/2023   |
+|07  | Project                         | ⌛     | 20/03/2023   |
 
 
 The original course contents is [here](https://github.com/DataTalksClub/data-engineering-zoomcamp), courtesy of [Alexey Grigorev](https://github.com/alexeygrigorev).
