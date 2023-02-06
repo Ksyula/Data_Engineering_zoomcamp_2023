@@ -1,2 +1,4 @@
 ## Prefect
 `prefect orion start`
+## Create GCP block
+`prefect block register -m prefect_gcp`
