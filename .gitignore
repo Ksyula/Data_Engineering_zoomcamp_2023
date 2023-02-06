@@ -131,6 +131,8 @@ dmypy.json
 
 *.csv
 *.csv.gz
-
+*.parquet
 */ny_taxi_postgres_data
 **/.terraform
+
+.DS_Store
