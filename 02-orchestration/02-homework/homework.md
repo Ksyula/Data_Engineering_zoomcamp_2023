@@ -21,7 +21,7 @@ Cron is a common scheduling specification for workflows.
 
 Using the flow in `etl_web_to_gcs.py`, create a deployment to run on the first of every month at 5am UTC. What’s the cron schedule for that?
 
-- `0 5 1 * *`
+- **`0 5 1 * *`**
 - `0 0 5 1 *`
 - `5 * 1 0 *`
 - `* * 5 1 0`
@@ -41,7 +41,7 @@ Create a deployment for this flow to run in a local subprocess with local flow c
 
 Make sure you have the parquet data files for Yellow taxi data for Feb. 2019 and March 2019 loaded in GCS. Run your deployment to append this data to your BiqQuery table. How many rows did your flow code process?
 
-- 14,851,920
+- **14,851,920**
 - 12,282,990
 - 27,235,753
 - 11,338,483
@@ -60,14 +60,14 @@ How many rows were processed by the script?
 
 - 88,019
 - 192,297
-- 88,605
+- **88,605**
 - 190,225
 
 
 
 ## Question 5. Email or Slack notifications
 
-Q5. It’s often helpful to be notified when something with your dataflow doesn’t work as planned. Choose one of the options below for creating email or slack notifications.
+It’s often helpful to be notified when something with your dataflow doesn’t work as planned. Choose one of the options below for creating email or slack notifications.
 
 The hosted Prefect Cloud lets you avoid running your own server and has Automations that allow you to get notifications when certain events occur or don’t occur. 
 
@@ -91,7 +91,7 @@ How many rows were processed by the script?
 - `125,268`
 - `377,922`
 - `728,390`
-- `514,392`
+- **`514,392`**
 
 
 ## Question 6. Secrets
@@ -100,7 +100,7 @@ Prefect Secret blocks provide secure, encrypted storage in the database and obfu
 
 - 5
 - 6
-- 8
+- **8**
 - 10
 
 

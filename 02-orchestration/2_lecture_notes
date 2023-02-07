@@ -2,3 +2,38 @@
 `prefect orion start`
 ## Create GCP block
 `prefect block register -m prefect_gcp`
+## Deploy your flow 
+https://docs.prefect.io/concepts/deployments/
+`prefect deployment build ./flows/02_gcp/etl_gcs_to_bq.py:etl_parent_flow -n "Parameterized ETL"`
+
+Deploy
+`prefect deployment apply etl_parent_flow-deployment.yaml`
+Start agent
+`prefect agent start  --work-queue "default"`
+Deploy build with cron schedule
+`prefect deployment build ./flows/02_gcp/etl_gcs_to_bq.py:etl_parent_flow -n etl2 --cron "0 0 * * *" -a`
+
+`prefect --help`
+
+## Run flow in Docker
+https://github.com/discdiver/prefect-zoomcamp/tree/main/flows/03_deployments
+
+Store code in docker image, push image to docker hub and run a docker container.
+1. Build the docker image
+`docker image build -t klegostay/discdriver:zoom .`
+1. Push to docker hub
+   1. Login and create a repo on https://hub.docker.com/repository
+   2. `docker push klegostay/discdriver:zoom`
+   3. Create docker block in Prefect
+2. Deploy from python file
+   `python flows/03_deployments/docker_deploy.py`
+3. Change API URL 
+`prefect profile ls`
+Update default profile:  
+https://docs.prefect.io/concepts/settings/
+`prefect config set PREFECT_API_URL="http://127.0.0.1:4200/api"`
+4. Fire up an agent
+`prefect agent start -q default`
+5. Run the deployment with overwriting parameters
+`prefect deployment run etl-parent-flow/docker-flow -p "months=[2,3]"`
+
